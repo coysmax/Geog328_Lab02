@@ -35,13 +35,12 @@
 
         <!-- Fullscreen background video (W3Schools-style) -->
         <div class="video-container">
-            <!-- By default this uses a local file at videos/redsox.mp4 —
-                 To replace the background video, add your MP4 to the `videos/` folder
-                 and name it `redsox.mp4`, or change the <source> path below. -->
-            <video autoplay muted loop id="bgvid" playsinline>
-                <source src="videos/redsox.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+          <!-- Embedded YouTube hero video (autoplay muted loop). This uses the
+              requested video: https://www.youtube.com/watch?v=mJQ2juik-UA
+              It's set to autoplay=1, mute=1, loop=1. If you'd rather use a local
+              MP4 file, replace this <iframe> with a <video> element and point the
+              source to videos/redsox.mp4 (see previous comments in file). -->
+          <iframe class="hero-video-embed" src="https://www.youtube.com/embed/mJQ2juik-UA?autoplay=1&mute=1&loop=1&playlist=mJQ2juik-UA&controls=0&modestbranding=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="hero-content">
                 <h1>Boston Red Sox — Fan Page</h1>
                 <p>Highlights: history, roster, schedule, and fan resources.</p>

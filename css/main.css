@@ -37,6 +37,23 @@
   z-index: 0;
   filter: brightness(0.7);
 }
+.hero-video-embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh; /* maintain cover behavior */
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none; /* allow clicks through to hero content */
+  border: 0;
+  filter: brightness(0.7);
+}
+
+/* Responsive adjustment so iframe covers container cleanly without overflow on narrow screens */
+@media (max-width: 900px) {
+  .hero-video-embed { width: 200%; left: 50%; }
+}
 .hero-content {
   position: relative;
   z-index: 1;
