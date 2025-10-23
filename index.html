@@ -33,22 +33,102 @@
         </a>
     </div>
 
-    <!-- Page content -->
-    <div class="content">
-        <!-- Abstract section -->
-        This is the abstract section.
-        <br>
-        <br>
-        <!-- Displaying the course cover image in a scaled size -->
-        Here is the course cover image in a scaled size:
-        <br>
-        <img src="img/cover.jpg" style="width: 100%; height: auto;">
-        <br>
-        <br>
-        <!-- Displaying the course cover image in its original size -->
-        Here is the course cover image in its original size:
-        <img src="img/cover.jpg">
-    </div>
+        <!-- Fullscreen background video (W3Schools-style) -->
+        <div class="video-container">
+            <video autoplay muted loop id="bgvid" playsinline>
+                <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-content">
+                <h1>GEOG 328 — Lab 02</h1>
+                <p>Example site converted from a markdown wiki page</p>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div class="content">
+                <!-- Abstract section -->
+                <p>This is the abstract section.</p>
+
+                <!-- Displaying the course cover image in a scaled size -->
+                <h3>Course cover (responsive)</h3>
+                <img src="img/cover.jpg" alt="cover" class="responsive-img">
+
+                <!-- Accordion (W3Schools style) -->
+                <h3>More information (accordion)</h3>
+                <button class="accordion">Purpose</button>
+                <div class="panel">
+                    <p>This lab teaches responsive navigation, CSS, and simple JavaScript behaviors.</p>
+                </div>
+
+                <button class="accordion">Instructions</button>
+                <div class="panel">
+                    <p>Convert your markdown wiki page to a static site and enable GitHub Pages for deployment.</p>
+                </div>
+
+                <button class="accordion">Deliverables</button>
+                <div class="panel">
+                    <p>Create a repository, enable Pages, and include multimedia + custom styles.</p>
+                </div>
+
+                <!-- Meet the Team (cards) -->
+                <h3>Meet the Team</h3>
+                <div class="team-row">
+                    <div class="card">
+                        <img src="img/cover.jpg" alt="Member 1" style="width:100%">
+                        <div class="container-card">
+                            <h4><b>Member 1</b></h4>
+                            <p>Role: Author</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/cover.jpg" alt="Member 2" style="width:100%">
+                        <div class="container-card">
+                            <h4><b>Member 2</b></h4>
+                            <p>Role: Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/cover.jpg" alt="Member 3" style="width:100%">
+                        <div class="container-card">
+                            <h4><b>Member 3</b></h4>
+                            <p>Role: Developer</p>
+                        </div>
+                    </div>
+        
+                                <!-- Summarizing table (W3Schools-like) -->
+                                <h3>Summary Table</h3>
+                                <table class="summary-table">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Description</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Navigation</td>
+                                        <td>Responsive top navigation with hamburger menu</td>
+                                        <td>Breakpoint: 800px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multimedia</td>
+                                        <td>Fullscreen background video on home page</td>
+                                        <td>Uses external sample MP4 (can be replaced)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interactive</td>
+                                        <td>Accordion sections and team cards</td>
+                                        <td>Accordion toggles via JS</td>
+                                    </tr>
+                                </table>
+
+                                <!-- Section counter widget -->
+                                <div id="section-counter" class="section-counter">
+                                    Sections on page: <span id="section-count">0</span>
+                                </div>
+                </div>
+        </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
     <script src="js/main.js"></script>
