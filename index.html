@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>GEOG 328 LAB 02 EXAMPLE</title>
+    <title>Boston Red Sox — Fan Page</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
@@ -15,13 +15,13 @@
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
-        <!-- Active link pointing to the index.html page -->
-        <a class="active" href="index.html">Abstract</a>
+        <!-- Active link pointing to the home page -->
+        <a class="active" href="index.html">Home</a>
 
         <!-- Links to other sections -->
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
+        <a href="section1.html">History</a>
+        <a href="section2.html">Roster</a>
+        <a href="section3.html">Schedule</a>
 
         <!-- Additional links -->
         <a href="see_also.html">See Also</a>
@@ -39,20 +39,20 @@
                 <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            <div class="hero-content">
-                <h1>GEOG 328 — Lab 02</h1>
-                <p>Example site converted from a markdown wiki page</p>
-            </div>
+                    <div class="hero-content">
+                        <h1>Boston Red Sox — Fan Page</h1>
+                        <p>Highlights: history, roster, schedule, and fan resources.</p>
+                    </div>
         </div>
 
         <!-- Page content -->
         <div class="content">
                 <!-- Abstract section -->
-                <p>This is the abstract section.</p>
+            <p>Welcome to the Boston Red Sox fan page. Below you will find a quick summary, team highlights, and useful links for fans.</p>
 
-                <!-- Displaying the course cover image in a scaled size -->
-                <h3>Course cover (responsive)</h3>
-                <img src="img/cover.jpg" alt="cover" class="responsive-img">
+            <!-- Displaying the team image in a scaled size -->
+            <h3>Team photo</h3>
+            <img src="img/fenway17952.jpg" alt="Red Sox Fenway Park" class="responsive-img">
 
                 <!-- Accordion (W3Schools style) -->
                 <h3>More information (accordion)</h3>
@@ -71,32 +71,49 @@
                     <p>Create a repository, enable Pages, and include multimedia + custom styles.</p>
                 </div>
 
-                <!-- Meet the Team (cards) -->
-                <h3>Meet the Team</h3>
-                <div class="team-row">
-                    <div class="card">
-                        <img src="img/cover.jpg" alt="Member 1" style="width:100%">
+                <!-- Homepage quick links grid -->
+                <h3>Quick Links</h3>
+                <div class="team-row" style="display:flex;flex-wrap:wrap;gap:1rem;">
+                    <a href="section1.html" class="card" style="text-decoration:none;color:inherit;flex:1 1 200px;">
+                        <img src="img/fenway17952.jpg" alt="History" style="width:100%">
                         <div class="container-card">
-                            <h4><b>Member 1</b></h4>
-                            <p>Role: Author</p>
+                            <h4><b>History</b></h4>
+                            <p>Team history, milestones, and iconic moments.</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="card">
-                        <img src="img/cover.jpg" alt="Member 2" style="width:100%">
+                    <a href="section2.html" class="card" style="text-decoration:none;color:inherit;flex:1 1 200px;">
+                        <img src="img/Boston-Red-Sox-Emblem.png" alt="Roster" style="width:100%">
                         <div class="container-card">
-                            <h4><b>Member 2</b></h4>
-                            <p>Role: Designer</p>
+                            <h4><b>Roster</b></h4>
+                            <p>Current roster highlights and stats.</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="card">
-                        <img src="img/cover.jpg" alt="Member 3" style="width:100%">
+                    <a href="section3.html" class="card" style="text-decoration:none;color:inherit;flex:1 1 200px;">
+                        <img src="img/SP.BOSTON28P1.jpg" alt="Schedule" style="width:100%">
                         <div class="container-card">
-                            <h4><b>Member 3</b></h4>
-                            <p>Role: Developer</p>
+                            <h4><b>Schedule</b></h4>
+                            <p>Game dates, results, and upcoming matches.</p>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="see_also.html" class="card" style="text-decoration:none;color:inherit;flex:1 1 200px;">
+                        <img src="img/espn_wip1013_01.jpg" alt="Fan Resources" style="width:100%">
+                        <div class="container-card">
+                            <h4><b>Fan Resources</b></h4>
+                            <p>Official links, fan communities, and merch.</p>
+                        </div>
+                    </a>
+
+                    <a href="references.html" class="card" style="text-decoration:none;color:inherit;flex:1 1 200px;">
+                        <img src="img/Boston-Red-Sox-Emblem.png" alt="References" style="width:100%">
+                        <div class="container-card">
+                            <h4><b>References</b></h4>
+                            <p>Sources and statistics references.</p>
+                        </div>
+                    </a>
+                </div>
         
                                 <!-- Summarizing table (W3Schools-like) -->
                                 <h3>Summary Table</h3>

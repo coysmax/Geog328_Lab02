@@ -1,6 +1,19 @@
-/* Add a gradient background color to the top navigation */
+:root {
+  /* Navigation customization variables */
+  --nav-breakpoint: 900px;          /* change this to control when the hamburger appears */
+  /* Boston Red Sox theme colors */
+  --nav-bg-start: #0C2340; /* Sox navy */
+  --nav-bg-end: #BD3039;   /* Sox red */
+  --nav-text-color: #ffffff;
+  --nav-hover-color: #ffebee; /* light hover text */
+  --nav-hover-bg: rgba(255,255,255,0.04);
+  --nav-active-bg: #BD3039;
+  --nav-active-border: #ffffff;
+}
+
+/* Top navigation (uses CSS variables above) */
 .topnav {
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background: linear-gradient(to right, var(--nav-bg-start), var(--nav-bg-end));
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -111,27 +124,27 @@
 .topnav a {
   float: left;
   display: block;
-  color: #ffffff;
+  color: var(--nav-text-color);
   text-align: center;
   padding: 16px 20px;
   text-decoration: none;
   font-size: 18px;
   font-family: 'Arial', sans-serif;
-  transition: all 0.3s ease;
+  transition: transform 0.18s ease, color 0.18s ease, background-color 0.18s ease;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffd700;
+  background-color: var(--nav-hover-bg);
+  color: var(--nav-hover-color);
   transform: translateY(-2px);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #e74c3c;
+  background-color: var(--nav-active-bg);
   color: white;
-  border-bottom: 3px solid #ffd700;
+  border-bottom: 3px solid var(--nav-active-border);
 }
 
 /* Hide the icon that should open and close the topnav on small screens */
@@ -145,8 +158,8 @@
   font-size: 22px;
 }
 
-/* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
+/* When the screen is less than the navigation breakpoint */
+@media screen and (max-width: var(--nav-breakpoint)) {
   /* Hide all links, except for the selected tab */
   .topnav a:not(.active) {
     display: none;
@@ -159,11 +172,11 @@
   }
 }
 
-/* When the screen is less than 800 pixels wide, if the user clicks on the icon */
+/* When the screen is less than the navigation breakpoint, if the user clicks on the icon */
 /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
 /* This media query sets the style for the unfolded topnav */
 /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: var(--nav-breakpoint)) {
   .topnav.responsive {
     position: relative;
   }

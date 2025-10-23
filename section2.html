@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>Boston Red Sox — Roster</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
@@ -34,35 +34,78 @@
 
         <!-- Page content -->
         <div class="content">
-                <!-- Section 2 content -->
-                <h2>Section 2 — Methods</h2>
-                <p>This section describes the methods used to convert content and test the responsive layout. It includes steps for editing HTML, CSS, and adding JavaScript behavior.</p>
+                        <!-- Section 2 content -->
+                        <h2>Roster</h2>
+                        <p>Below is an up-to-date snapshot (selected players) taken from the official MLB roster and Baseball-Reference statistics (2025 season). Links and sources appear under the tables — replace or extend with your preferred players/images in <code>img/</code>.</p>
 
-                <h3>Screenshot</h3>
-                <img src="img/cover.jpg" alt="Section 2 screenshot" class="responsive-img">
+                        <h3>Selected Roster (highlights)</h3>
+                        <table class="summary-table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Pos</th>
+                                    <th>Notes / 2025 role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Alex Bregman</td><td>3B</td><td>Everyday infielder / veteran bat</td></tr>
+                                <tr><td>Trevor Story</td><td>SS</td><td>Shortstop / middle lineup bat</td></tr>
+                                <tr><td>Rafael Devers</td><td>DH</td><td>Power bat / middle of order</td></tr>
+                                <tr><td>Jarren Duran</td><td>LF</td><td>Speed / outfield starter</td></tr>
+                                <tr><td>Ceddanne Rafaela</td><td>CF</td><td>Young center fielder / everyday starter</td></tr>
+                                <tr><td>Wilyer Abreu</td><td>RF</td><td>Corner outfielder</td></tr>
+                                <tr><td>Garrett Crochet</td><td>SP</td><td>Front-rotation starter</td></tr>
+                                <tr><td>Brayan Bello</td><td>SP</td><td>Starting pitcher</td></tr>
+                                <tr><td>Lucas Giolito</td><td>SP</td><td>Veteran starter</td></tr>
+                                <tr><td>Aroldis Chapman</td><td>RP</td><td>High-leverage reliever</td></tr>
+                            </tbody>
+                        </table>
 
-                <h3>Steps</h3>
-                <ol>
-                    <li>Edit HTML pages and add content.</li>
-                    <li>Create or update `css/main.css` for styling.</li>
-                    <li>Add small JS functions in `js/main.js` for interactivity.</li>
-                </ol>
+                        <p style="font-size:0.9em; margin-top:0.5rem">Full roster &amp; depth charts: <a href="https://www.mlb.com/redsox/roster" target="_blank" rel="noopener">MLB.com – Red Sox roster</a> · Season stats and leaderboards: <a href="https://www.baseball-reference.com/teams/BOS/2025.shtml" target="_blank" rel="noopener">Baseball-Reference (2025)</a> (data snapshot Oct 22, 2025).</p>
 
-                <h3>FAQ</h3>
-                <button class="accordion">How do I test responsiveness?</button>
-                <div class="panel">
-                    <p>Resize the browser window or use devtools device emulator to check the layout at different viewport widths.</p>
-                </div>
+                        <h3>Top contributors (2025 snapshot)</h3>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                            <div>
+                                <h4>Batting — WAR leaders (selected)</h4>
+                                <table class="summary-table">
+                                    <thead><tr><th>Player</th><th>WAR</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Ceddanne Rafaela</td><td>4.8</td></tr>
+                                        <tr><td>Jarren Duran</td><td>4.6</td></tr>
+                                        <tr><td>Trevor Story</td><td>3.8</td></tr>
+                                        <tr><td>Alex Bregman</td><td>3.5</td></tr>
+                                        <tr><td>Wilyer Abreu</td><td>3.2</td></tr>
+                                    </tbody>
+                                </table>
+                                <p style="font-size:0.85em">Source: Baseball-Reference — <a href="https://www.baseball-reference.com/teams/BOS/2025.shtml" target="_blank" rel="noopener">2025 BOS stats</a></p>
+                            </div>
 
-                <button class="accordion">Do I need external libraries?</button>
-                <div class="panel">
-                    <p>Not necessarily. This lab uses only Font Awesome for the hamburger icon, but you can include others if desired.</p>
-                </div>
+                            <div>
+                                <h4>Pitching — WAR / value leaders (selected)</h4>
+                                <table class="summary-table">
+                                    <thead><tr><th>Player</th><th>WAR</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Garrett Crochet</td><td>6.3</td></tr>
+                                        <tr><td>Aroldis Chapman</td><td>3.5</td></tr>
+                                        <tr><td>Garrett Whitlock</td><td>2.4</td></tr>
+                                        <tr><td>Brayan Bello</td><td>2.4</td></tr>
+                                        <tr><td>Lucas Giolito</td><td>2.1</td></tr>
+                                    </tbody>
+                                </table>
+                                <p style="font-size:0.85em">Source: Baseball-Reference — <a href="https://www.baseball-reference.com/teams/BOS/2025.shtml" target="_blank" rel="noopener">2025 BOS pitching</a></p>
+                            </div>
+                        </div>
 
-                <button class="accordion">Where to place JS files?</button>
-                <div class="panel">
-                    <p>Place scripts in the `js/` folder and include them at the end of the HTML body to avoid DOM load issues.</p>
-                </div>
+                        <h3>FAQ</h3>
+                        <button class="accordion">Where to find the full roster?</button>
+                        <div class="panel">
+                            <p>Check the official Red Sox site or MLB's roster page for the latest lineup and transactions.</p>
+                        </div>
+
+                        <button class="accordion">Can I include player stats?</button>
+                        <div class="panel">
+                            <p>Yes — embed tables or link to stat pages. Make sure to cite the source of the statistics.</p>
+                        </div>
         </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
