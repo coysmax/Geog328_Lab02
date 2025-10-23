@@ -45,7 +45,7 @@
   height: 100vh;
   transform: translate(-50%, -50%);
   z-index: 0;
-  pointer-events: none; /* allow clicks through to hero content */
+  pointer-events: auto; /* allow interacting with the video (play/unmute) */
   border: 0;
   filter: brightness(0.7);
 }
